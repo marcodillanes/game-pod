@@ -9,6 +9,13 @@ export const SignUp = () => {
     }
 
     return (
-        <>SignUp</>
+        <>SignUp
+        
+        <form onSubmit={handleSubmit}>
+            <label for="username">Username</label>
+            <input type="text" placeholder='Enter a Username!' value={username} onChange={(e) => setUsername(e.target.value)}/>
+        </form>
+
+        </>
     )
 }
