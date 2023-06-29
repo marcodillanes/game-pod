@@ -12,12 +12,16 @@ export const SignUp = () => {
         <>SignUp
         
         <form onSubmit={handleSubmit}>
+            <div>
             <label for="username">Username</label>
-            <input type="text" placeholder='Enter a Username!' value={username} onChange={(e) => setUsername(e.target.value)}/>
-            <label for="password">Password</label>
-            <input type="password" placeholder="Enter a Password" onChange={(e) => setPassword(e.target.value)}/>
+            <input type="text" placeholder='Enter a Username!' value={username} onChange={(e) => setUsername(e.target.value)} required/>
+            </div>
+            <div>
+            <label for="password">Password Must contain at least one number and one uppercase and one lowercase letter, and at least 6 or more characters</label>
+            <input type="password" placeholder="Enter a Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onChange={(e) => setPassword(e.target.value)} required/>
+            </div>
             <button>Sign Up</button>
-            <button>Already have an account login here!</button>
+            <button>Already have an account? Login here!</button>
         </form>
 
         </>
