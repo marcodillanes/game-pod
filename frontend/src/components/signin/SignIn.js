@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function SignIn() {
   return (
-    <div className='d-flex justify-content-center align-items-center bg-primary'>
+    <div className='d-flex vh-100 justify-content-center align-items-center bg-black'>
         <div className='p-3 bg-grey w-25'>
             <form action="">
                 <div className='mb-2'>
