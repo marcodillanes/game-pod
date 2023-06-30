@@ -1,10 +1,11 @@
 import React from 'react'
 import './HomePage.css';
+import { useNavigate } from 'react-router-dom';
 
  
 
 const HomePage = () => {
-  
+        let navigate = useNavigate();
 
   return (
     <div>
@@ -17,8 +18,8 @@ const HomePage = () => {
           <button className="Game3-btn">Game 3</button>
         </div>
         <div className="Options">
-          <button className="SignUp-btn">SIGN UP</button>
-          <button className="SignIn-btn">SIGN IN</button>
+          <button onClick={() => {navigate('/SignUp')}} className="SignUp-btn">SIGN UP</button>
+          <button onClick={() => {navigate('/SignIn')}} className="SignIn-btn">SIGN IN</button>
         </div>
       </div>
     </div>
