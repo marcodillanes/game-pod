@@ -4,7 +4,6 @@ import { SignUp } from "./components/signup/SignUp.jsx";
 
 import { BrowserRouter, Routers, Router, Routes, Route } from 'react-router-dom';
 
-
 function App() {
   return (
  <BrowserRouter>
