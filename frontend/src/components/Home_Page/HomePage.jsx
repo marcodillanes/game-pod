@@ -19,7 +19,7 @@ const HomePage = () => {
         </div>
         <div className="Options">
           <button onClick={() => {navigate('/SignUp')}} className="SignUp-btn">SIGN UP</button>
-          <button onClick={() => {navigate('/SignIn')}} className="SignIn-btn">SIGN IN</button>
+          <button onClick={() => {navigate('/')}} className="SignIn-btn">SIGN IN</button>
         </div>
       </div>
     </div>
