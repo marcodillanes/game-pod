@@ -8,8 +8,8 @@ app.use(cors());
 const db = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "",
-    database:"",
+    password: "Sqlpass!12",
+    database:"gamePod",
 })
 
 app.listen(5000, () => {
