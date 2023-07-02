@@ -1,12 +1,14 @@
 import React, { useState } from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useNavigate } from 'react-router-dom'
 
 export const SignUp = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate()
 
     function handleSubmit(event) {
-        event.precentDefault()
+        event.preventDefault()
     }
 
     return (
@@ -22,13 +24,13 @@ export const SignUp = () => {
                     </div>
                     <div className='mb-2'>
                         <label for="password">Password </label>
-                        <input type="password" placeholder="At least one numbe, upper, and lowercase " value={password} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" className="form-control"
+                        <input type="password" placeholder="At least one number, upper, and lowercase letter" value={password} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" className="form-control"
                         onChange={(e) => setPassword(e.target.value)} required/>
                     </div>
             
-                <button className='btn btn-success'>Sign Up</button>  
+                <button className='btn btn-success mb-2'>Sign Up</button>  
                 </form>
-                <button className='btn btn-success'>Already have an account? Login here!</button>
+                <button onClick={() => {navigate('/')}} className='btn btn-success'>Already have an account? Login here!</button>
             </div>
                 
         </div>
