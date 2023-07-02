@@ -25,7 +25,8 @@ function SignIn() {
                     <input type='password' placeholder='Enter a Password!' className='form-control'
                     onChange={e => setPassword(e.target.value)}/>
                 </div>
-                <button className='btn btn-success'>Sign In</button>    
+                <button className='btn btn-success mb-2'>Sign In</button>  
+                  
             </form>
             
             <button className='btn btn-success'>Or Sign Up Here!</button>
