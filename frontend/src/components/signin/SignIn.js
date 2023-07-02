@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { useNavigate } from 'react-router-dom'
 
 function SignIn() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -29,7 +30,7 @@ function SignIn() {
                   
             </form>
             
-            <button className='btn btn-success'>Or Sign Up Here!</button>
+            <button onClick={() => {navigate('/SignUp')}} className='btn btn-success'>Or Sign Up Here!</button>
        
         </div>
     </div>
