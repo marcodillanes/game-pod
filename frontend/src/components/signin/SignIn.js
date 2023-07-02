@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 function SignIn() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const navigate = useNavigate
+    const navigate = useNavigate()
 
     function handleSubmit(event) {
         event.preventDefault();
