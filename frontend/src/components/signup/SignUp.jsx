@@ -26,11 +26,7 @@ export const SignUp = () => {
                         onChange={(e) => setPassword(e.target.value)} required/>
                     </div>
             
-<<<<<<< HEAD
-                    <button className='btn btn-success'>Sign Up</button>  
-=======
                 <button className='btn btn-success mb-2'>Sign Up</button>  
->>>>>>> c721be7c3a489c63cb4b6e13d0698b1cb45c3b7e
                 </form>
                 <button className='btn btn-success'>Already have an account? Login here!</button>
             </div>
