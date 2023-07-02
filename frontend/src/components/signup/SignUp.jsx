@@ -8,7 +8,7 @@ export const SignUp = () => {
     const navigate = useNavigate
 
     function handleSubmit(event) {
-        event.precentDefault()
+        event.preventDefault()
     }
 
     return (
