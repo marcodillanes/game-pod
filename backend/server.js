@@ -5,6 +5,8 @@ const dotenv = require("dotenv").config()
  
 const app = express();
 
+app.use(express.json())
+
 app.use(cors());
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -13,16 +15,19 @@ const db = mysql.createConnection({
     database: process.env.DATABASE
 })
 
-app.post('/signup', (req, res)=> {
+app.post('/SignUp', (req, res)=> {
+
+    const username = req.body.username
+    const password = req.body.password
+
     db.query("INSERT INTO user_info (username, password) VALUES (?,?)", 
     [username, password], 
-    (err, result) => console.log(err)
+    (err, res) => console.log(err)
     )
 })
 
 app.listen(5000, () => {
     console.log("listening...");
-    console.log(db)
 })
 
 module.exports = db
