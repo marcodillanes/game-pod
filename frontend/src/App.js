@@ -4,6 +4,7 @@ import SignIn from "./components/signin/SignIn.js";
 import { SignUp } from "./components/signup/SignUp.jsx"
 import  HomePage from "./components/Home_Page/HomePage.jsx";
 import { BrowserRouter, Routers, Routes, Route } from 'react-router-dom';
+import SideScroller from "./components/side_scroller/SideScroller.jsx";
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
         <Route path='/' element={<SignIn/>}></Route>
         <Route path='/SignUp' element={<SignUp/>}></Route>
         <Route path='/HomePage' element={<HomePage/>}></Route>
-        {/* <Route path='/nameofgameone' element={<nameofgameone/>}></Route> */}
-   
+        <Route path='/SideScroller' element={<SideScroller/>}></Route>
       </Routes>
     </BrowserRouter>
     
