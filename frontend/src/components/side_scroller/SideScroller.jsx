@@ -8,6 +8,18 @@ import './SideScroller.css';
 function SideScroller (props) {
     // all of your js would go here
 
+    //load event waits for assets to be fully loaded before executing code in callback function
+
+    window.addEventListener('load', function(){
+        const canvas = document.getElementById('canvasgame');
+        //built in canvas 2d api to animate game, youtube saving the day with this one (if i can figure it out 100%)
+        const ctx = canvas.getContext('2d');
+        canvas.width = 800;
+        canvas.height = 720;
+
+    });
+
+
     return (
 
         // all of your html would go here
@@ -22,15 +34,19 @@ function SideScroller (props) {
             <body>
                 {/* all game assets will be in here */}
                 <canvas id='canvasgame'></canvas>
-                <img id='playerChar' src='charimg'></img> 
-                <img id='enemyChar' src='enemyimg'></img>
-                <img id= 'backgroundImg' src='bckgrndimg'></img>
+                <img id='playerChar' src='playerChar.png'></img> 
+                <img id='enemyChar' src='enemyChar.png'></img>
+                <img id= 'backgroundImg' src='backGround.png'></img>
 
 
             </body></>
       
         // all event listeners here
+        
+       
+       
     )
+ 
 }
 
 export default SideScroller
