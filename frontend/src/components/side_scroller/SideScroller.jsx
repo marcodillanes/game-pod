@@ -2,9 +2,6 @@ import React from 'react';
 import './SideScroller.css';
 
 
-
-
-
 function SideScroller (props) {
     // all of your js would go here
 
@@ -43,7 +40,6 @@ function SideScroller (props) {
       
         // all event listeners here
         
-       
        
     )
  
