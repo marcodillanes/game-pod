@@ -18,8 +18,7 @@ export const SignUp = () => {
         event.preventDefault()
     }
 
-    return (
-        <>  
+    return ( 
         
         <div className='d-flex vh-100 justify-content-center align-items-center bg-black'>
             <div className='p-3 bg-grey w-25'>
@@ -30,7 +29,7 @@ export const SignUp = () => {
                         onChange={(e) => setUsernameReg(e.target.value)} required/>
                     </div>
                     <div className='mb-2'>
-                        <label htmlFor="password">Password </label>
+                        <label htmlFor="password">Password Must be 6 chars long</label>
                         <input type="password" placeholder="At least one number, upper, and lowercase letter" value={passwordReg} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" className="form-control"
                         onChange={(e) => setPasswordReg(e.target.value)} required/>
                     </div>
@@ -41,9 +40,6 @@ export const SignUp = () => {
             </div>
                 
         </div>
-        
-        
-        
-        </>
+ 
     )
 }
