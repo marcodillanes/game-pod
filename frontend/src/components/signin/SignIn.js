@@ -7,7 +7,7 @@ function SignIn() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
-    /* const [loginStatus, setLoginStatus] = useState('') */
+    const [loginStatus, setLoginStatus] = useState('')
     const navigate = useNavigate()
 
     function handleSubmit(event) {
@@ -15,7 +15,13 @@ function SignIn() {
             username: username, 
             password: password
         }).then((response) => {
-            console.log(response)
+
+            if (response.data.message){
+                setLoginStatus(response.data.message)
+            }else (
+                setLoginStatus(response.data[0].username)
+            )
+            
         })
         event.preventDefault();
     }
@@ -43,6 +49,10 @@ function SignIn() {
        
         </div>
         
+        <div>
+            <h1>{loginStatus}</h1>
+        </div>
+
     </div>
   )
 }

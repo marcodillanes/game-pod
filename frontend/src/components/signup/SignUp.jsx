@@ -14,7 +14,7 @@ export const SignUp = () => {
             password: passwordReg
         }).then((response) => {
             console.log(response)
-            })
+        })
         event.preventDefault()
     }
 
