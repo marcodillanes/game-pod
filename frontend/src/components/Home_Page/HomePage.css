@@ -1,5 +1,8 @@
+
+
+
 body {
-    background-color: #444247;
+    background: linear-gradient(#16a6d2 30%, #2a24e3 120%);
     padding: 0;
     margin: 0; 
 }
