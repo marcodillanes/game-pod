@@ -24,6 +24,16 @@ body {
     position: absolute;
 }
 
+img {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 67px;
