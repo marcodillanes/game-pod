@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './SideScroller.css';
 
 
+
 function SideScroller (props) {
     // all of your js would go here
 
@@ -14,7 +15,45 @@ function SideScroller (props) {
         canvas.width = 800;
         canvas.height = 720;
 
+    
     });
+
+    class inputHandle {
+        constructor(){
+            this.keys = [];
+            window.addEventListener('keydown', function(e){
+                console.log(e.key);
+            });
+        }
+
+    } 
+
+
+    class player {
+
+    }
+
+    class background {
+
+    }
+
+
+    class enemy {
+
+    }
+
+    function handleEnemy (){
+
+    }
+
+    function displayCurrentState(){
+
+    }
+
+    function animate(){
+
+    }
+
 
 
     return (
