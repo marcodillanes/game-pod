@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { useEffect } from 'react'; 
 import './SideScroller.css';
 
 
@@ -7,7 +7,7 @@ function SideScroller (props) {
 
     //load event waits for assets to be fully loaded before executing code in callback function
 
-    window.addEventListener('load', function(){
+    useEffect ( function(){
         const canvas = document.getElementById('canvasgame');
         //built in canvas 2d api to animate game, youtube saving the day with this one (if i can figure it out 100%)
         const ctx = canvas.getContext('2d');
@@ -31,14 +31,15 @@ function SideScroller (props) {
             <body>
                 {/* all game assets will be in here */}
                 <canvas id='canvasgame'></canvas>
-                <img id='playerChar' src='playerChar.png'></img> 
-                <img id='enemyChar' src='enemyChar.png'></img>
-                <img id= 'backgroundImg' src='backGround.png'></img>
+                <img id='playerChar' src='assets/playerChar.png'></img> 
+                <img id='enemyChar' src='assets/enemyChar.png'></img>
+                <img id= 'backgroundImg' src='assets/backGround.png'></img>
 
 
             </body></>
       
         // all event listeners here
+        
         
        
     )
