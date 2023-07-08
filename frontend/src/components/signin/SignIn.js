@@ -29,7 +29,8 @@ function SignIn() {
                 <button className='btn btn-success mb-2' 
                             style={{ 
                                 backgroundColor: 'transparent', 
-                                border: '1px solid',
+                                border: '1px solid black',
+                                color: 'black'
                             }} 
                         onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
                         onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
@@ -41,7 +42,8 @@ function SignIn() {
                 <button onClick={() => {navigate('/SignUp')}} className='btn btn-success'
                                 style={{ 
                                     backgroundColor: 'transparent', 
-                                    border: '1px solid',
+                                    border: '1px solid black',
+                                    color: 'black'
                                 }} 
                             onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
                             onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}

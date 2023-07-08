@@ -31,7 +31,8 @@ export const SignUp = () => {
                 <button className='btn btn-success mb-2'
                             style={{ 
                                 backgroundColor: 'transparent', 
-                                border: '1px solid',
+                                border: '1px solid black',
+                                color: 'black'
                             }} 
                         onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
                         onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
@@ -40,7 +41,8 @@ export const SignUp = () => {
                 <button onClick={() => {navigate('/')}} className='btn btn-success'
                             style={{ 
                                 backgroundColor: 'transparent', 
-                                border: '1px solid',
+                                border: '1px solid black',
+                                color: 'black'
                             }} 
                         onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
                         onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
