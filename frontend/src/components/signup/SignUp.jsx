@@ -12,9 +12,9 @@ export const SignUp = () => {
     }
 
     return (
-        <>Sign Up  
+        <>  
         
-        <div className='d-flex vh-100 justify-content-center align-items-center bg-black'>
+        <div className='d-flex vh-100 justify-content-center align-items-center bg-black' style={{ background: 'linear-gradient(#16a6d2 30%, #2a24e3 120%)'}}>
             <div className='p-3 bg-grey w-25'>
                 <form onSubmit={handleSubmit}>
                     <div className='mb-2'>
@@ -28,9 +28,25 @@ export const SignUp = () => {
                         onChange={(e) => setPassword(e.target.value)} required/>
                     </div>
             
-                <button className='btn btn-success mb-2'>Sign Up</button>  
+                <button className='btn btn-success mb-2'
+                            style={{ 
+                                backgroundColor: 'transparent', 
+                                border: '1px solid',
+                            }} 
+                        onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
+                        onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
+                >Sign Up</button>  
                 </form>
-                <button onClick={() => {navigate('/')}} className='btn btn-success'>Already have an account? Login here!</button>
+                <button onClick={() => {navigate('/')}} className='btn btn-success'
+                            style={{ 
+                                backgroundColor: 'transparent', 
+                                border: '1px solid',
+                            }} 
+                        onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
+                        onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
+                
+                    >Already have an account? Login here!
+                </button>
             </div>
                 
         </div>
