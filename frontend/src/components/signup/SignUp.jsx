@@ -29,7 +29,7 @@ export const SignUp = () => {
                         onChange={(e) => setUsernameReg(e.target.value)} required/>
                     </div>
                     <div className='mb-2'>
-                        <label htmlFor="password">Password Must be 6 chars long</label>
+                        <label htmlFor="password">Password Must be 6-10 chars long</label>
                         <input type="password" placeholder="At least one number, upper, and lowercase letter" value={passwordReg} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" className="form-control"
                         onChange={(e) => setPasswordReg(e.target.value)} required/>
                     </div>
