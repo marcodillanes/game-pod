@@ -6,11 +6,11 @@ import  HomePage from "./components/Home_Page/HomePage.jsx";
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const signedIn = window.localStorage.getItem("isLoggedIn")
+  const signedIn = window.localStorage.getItem("isSignedIn")
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<SignIn/>}></Route>
+        <Route path='/' element={signedIn?<HomePage/>:<SignIn/>}></Route>
         <Route path='/SignUp' element={<SignUp/>}></Route>
         <Route path='/HomePage' element={<HomePage/>}></Route>
         {/* <Route path='/nameofgameone' element={<nameofgameone/>}></Route> */}
