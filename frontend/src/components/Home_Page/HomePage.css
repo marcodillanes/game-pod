@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 body {
-    background-color: #444247;
+    background: linear-gradient(#16a6d2 30%, #2a24e3 120%);
     padding: 0;
     margin: 0; 
 }
@@ -12,57 +16,86 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 40px;
+    position: relative;
 
 }
-/*
+
 .Game-Menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    margin-top: 2rem;
-    margin-bottom: 1.25rem;
+    position: absolute;
+}
+
+img {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 67px;
+    text-shadow: 5px 8px 5px rgba(0, 0, 0, 0.966);
+    color: #d2c216;
+    top: 4%;
+    left: 35%;
+    position: absolute;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 21px;
+    text-shadow: 3px 4px 3px rgba(0, 0, 0, 0.966);
+    color: #d2c216;
+    top: 12.7%;
+    left: 42%;
+    position: absolute;
 
 }
-*/
+
 .Game1-btn {
-    background-color: #2EAE20;
-    font-family: "Gill Sans Extrabold", sans-serif;
-    position: absolute;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    position: fixed;
     transform: translate(-50%, -50%);
     top: 38%;
     left: 50%;
     padding: 20px 150px;
     font-size: 30px;
-    font-weight: bold;
     cursor: pointer;
+    border: 3px solid;
 }
 
 .Game2-btn {
-    background-color: #2EAE20;
-    font-family: "Gill Sans Extrabold", sans-serif;
-    position: absolute;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    position: fixed;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     padding: 20px 150px;
     font-size: 30px;
-    font-weight: bold;
     cursor: pointer;
+    border: 3px solid;
 } 
 
 .Game3-btn {
-    background-color: #2EAE20;
-    font-family: "Gill Sans Extrabold", sans-serif;
-    position: absolute;
+    background-color: transparent;
+    font-family: 'Press Start 2P', cursive;
+    position: fixed;
     transform: translate(-50%, -50%);
     top: 62%;
     left: 50%;
     padding: 20px 150px;
     font-size: 30px;
-    font-weight: bold;
     cursor: pointer;
+    border: 3px solid;
+}
+
+.Game1-btn:hover, .Game2-btn:hover, .Game3-btn:hover, .SignIn-btn:hover, .SignUp-btn:hover{
+    background-color: #d2c216;
 }
 
 .Options {
@@ -70,31 +103,34 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 33%;
+    position: absolute;
 }
 
 .SignUp-btn{
-    background-color: #2EAE20;
+    background-color: transparent;
     top: 69%;
-    left: 50%;
+    left: 51%;
     margin-right: 1%;
     padding: 20px 120px;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
+    border: 3px solid;
     font-weight: 700;
     font-size: 15px;
-    font-family: "Gill Sans Extrabold", sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .SignIn-btn{
-    background-color: #2EAE20;
+    background-color: transparent;
     top: 69%;
-    right: 50%;
+    right: 51%;
     margin-left: 1%;
     padding: 20px 120px;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
+    border: 3px solid;
     font-weight: 700;
     font-size: 15px;
-    font-family: "Gill Sans Extrabold", sans-serif;
+    font-family: 'Press Start 2P', cursive;
 
 }
