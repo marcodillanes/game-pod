@@ -1,0 +1,33 @@
+
+
+   .container {
+     width: 70%;
+     margin: auto;
+     text-align: center;
+   }
+
+   .dice {
+     text-align: center;
+     display: inline-block;
+   }
+
+   body {
+     background-color: bisque;
+   }
+
+   h1 {
+     margin: 30px;
+     font-family: 'Courier New', Courier, monospace;
+     text-shadow: 1.5px 0 #0000;
+   }
+
+   p {
+     font-size: 32px;
+     text-shadow: 1.5px 0 #0000;
+     color: black;
+     font-family: 'Courier New', Courier, monospace;
+   }
+  
+   img{
+    width: 80%;
+   }
