@@ -1,8 +1,8 @@
 import React from "react";
 import SignIn from "./components/signin/SignIn.js";
 import { useContext, useState} from "react";
-
-import { SignUp } from "./components/signup/SignUp.jsx"
+import SideScroller from "./components/side_scroller/SideScroller.jsx"
+import  {SignUp}  from "./components/signup/SignUp.jsx"
 import  HomePage from "./components/Home_Page/HomePage.jsx";
 import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
 

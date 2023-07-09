@@ -20,7 +20,7 @@ const HomePage = ({username}) => {
           <h3>Welcome {username}</h3>
             <div className="Game-Menu-Container">
               <div className="Game-Menu">
-                <button className="Game1-btn">Game 1</button>
+                <button onClick={()=>{navigate('/SideScroller')}} className="Game1-btn">Game 1</button>
                 <button className="Game2-btn">Game 2</button>
                 <button className="Game3-btn">Game 3</button>
               </div>
