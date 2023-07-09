@@ -1,13 +1,30 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom'
+import Axios from 'axios'
 
-function SignIn() {
-    const [username, setUsername] = useState('')
+function SignIn({username, setUsername}) {
     const [password, setPassword] = useState('')
+    /* const [username, setUsername] = useState('') */
+
+    const [loginStatus, setLoginStatus] = useState('')
     const navigate = useNavigate()
 
     function handleSubmit(event) {
+        Axios.post("http://localhost:5000/", {
+            username: username, 
+            password: password
+        }).then((response) => {
+
+            if (response.data.message){
+                setLoginStatus(response.data.message)
+            }else {
+                setLoginStatus(response.data[0].username)
+                window.localStorage.setItem("isSignedIn", true)
+                navigate("/HomePage")
+            }
+            
+        })
         event.preventDefault();
     }
 
@@ -15,7 +32,7 @@ function SignIn() {
    
     <div className='d-flex vh-100 justify-content-center align-items-center bg-black'  style={{ background: 'linear-gradient(#16a6d2 30%, #2a24e3 120%)'}}>
         <div className='p-3 bg-grey w-25'>
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <div className='mb-2'>
                     <label htmlFor='username'>Username</label>
                     <input type="text" placeholder='Enter a Username!' className='form-control'
@@ -63,6 +80,11 @@ function SignIn() {
                 </h1>
        
         </div>
+
+        <div>
+            <h1>{loginStatus}</h1>
+        </div>
+
     </div>
   )
 }

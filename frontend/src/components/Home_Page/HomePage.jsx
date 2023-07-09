@@ -4,14 +4,20 @@ import { useNavigate } from 'react-router-dom';
 import myImage from './Images/Logo.png';
  
 
-const HomePage = () => {
-        let navigate = useNavigate();
+const HomePage = ({username}) => {
+  let navigate = useNavigate();
+
+  function signOut() {
+    window.localStorage.removeItem("isSignedIn")
+    navigate('/')
+  }
 
   return (
     <div>
        <img src={myImage} alt="Logo" />
         <h1>Game Pod</h1>
           <h2>First Edition</h2>
+          <h3>Welcome {username}</h3>
             <div className="Game-Menu-Container">
               <div className="Game-Menu">
                 <button className="Game1-btn">Game 1</button>
@@ -21,6 +27,7 @@ const HomePage = () => {
               <div className="Options">
                 <button onClick={() => {navigate('/SignUp')}} className="SignUp-btn">SIGN UP</button>
                 <button onClick={() => {navigate('/')}} className="SignIn-btn">SIGN IN</button>
+                <button onClick={() => {signOut()}}>Sign Out</button>
               </div>
             </div>
     </div>
