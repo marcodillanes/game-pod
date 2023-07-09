@@ -29,7 +29,8 @@ function SignIn() {
                 <button className='btn btn-success mb-2' 
                             style={{ 
                                 backgroundColor: 'transparent', 
-                                border: '1px solid',
+                                border: '1px solid black',
+                                color: 'black'
                             }} 
                         onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
                         onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
@@ -41,12 +42,25 @@ function SignIn() {
                 <button onClick={() => {navigate('/SignUp')}} className='btn btn-success'
                                 style={{ 
                                     backgroundColor: 'transparent', 
-                                    border: '1px solid',
+                                    border: '1px solid black',
+                                    color: 'black'
                                 }} 
                             onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
                             onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
                 >Or Sign Up Here!
                 </button>
+
+                <h1 style={{
+                    fontFamily: 'Press Start 2P, cursive',
+                    fontSize: '67px',
+                    textShadow: '5px 8px 5px rgba(0, 0, 0, 0.966)',
+                    color: '#d2c216',
+                    top: '25%',
+                    left: '35%',
+                    position: 'absolute',
+                }}>
+                    Game Pod
+                </h1>
        
         </div>
     </div>
