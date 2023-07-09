@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import myImage from './Images/Logo.png';
  
 
-const HomePage = (props) => {
+const HomePage = ({username}) => {
   let navigate = useNavigate();
 
   function signOut() {
@@ -17,7 +17,7 @@ const HomePage = (props) => {
        <img src={myImage} alt="Logo" />
         <h1>Game Pod</h1>
           <h2>First Edition</h2>
-          {/* <h3>Welcome {props.username}</h3> */}
+          <h3>Welcome {username}</h3>
             <div className="Game-Menu-Container">
               <div className="Game-Menu">
                 <button className="Game1-btn">Game 1</button>

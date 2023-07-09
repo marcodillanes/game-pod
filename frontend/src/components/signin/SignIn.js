@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom'
 import Axios from 'axios'
 
-function SignIn() {
+function SignIn({username, setUsername}) {
     const [password, setPassword] = useState('')
-    const [username, setUsername] = useState('')
+    /* const [username, setUsername] = useState('') */
 
     const [loginStatus, setLoginStatus] = useState('')
     const navigate = useNavigate()
