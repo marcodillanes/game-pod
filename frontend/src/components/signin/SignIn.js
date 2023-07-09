@@ -18,9 +18,11 @@ function SignIn() {
 
             if (response.data.message){
                 setLoginStatus(response.data.message)
-            }else (
+            }else {
                 setLoginStatus(response.data[0].username)
-            )
+                window.localStorage.setItem("isSignedIn", true)
+                navigate("/HomePage")
+            }
             
         })
         event.preventDefault();

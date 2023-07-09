@@ -5,7 +5,11 @@ import myImage from './Images/Logo.png';
  
 
 const HomePage = () => {
-        let navigate = useNavigate();
+  let navigate = useNavigate();
+
+  function signOut() {
+    window.localStorage.removeItem("isLoggedIn")
+  }
 
   return (
     <div>
