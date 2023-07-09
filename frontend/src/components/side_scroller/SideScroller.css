@@ -1,15 +1,16 @@
 body {
-    background: black;
-}
+    background: #171D1C;
 
-#canvasgame {
-    background: green;
+}
+#canvas {
     position: absolute;
     top: 50%;
-    left: 50;
+    left: 50%;
     transform: translate(-50%,-50%);
-    border: 5px solid grey;
+    border: 5px solid white;
+
 }
 
-#playerChar, #enemyChar, #backgroundImg {
+#playerCharacter, #enemyCharacter, #backgroundImage {
+    display: none;
 }
