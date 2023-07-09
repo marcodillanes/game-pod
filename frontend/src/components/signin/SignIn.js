@@ -13,7 +13,7 @@ function SignIn() {
 
   return (
    
-    <div className='d-flex vh-100 justify-content-center align-items-center bg-black'>
+    <div className='d-flex vh-100 justify-content-center align-items-center bg-black'  style={{ background: 'linear-gradient(#16a6d2 30%, #2a24e3 120%)'}}>
         <div className='p-3 bg-grey w-25'>
             <form action="">
                 <div className='mb-2'>
@@ -26,11 +26,41 @@ function SignIn() {
                     <input type='password' placeholder='Enter a Password!' className='form-control'
                     onChange={e => setPassword(e.target.value)}/>
                 </div>
-                <button className='btn btn-success mb-2'>Sign In</button>  
+                <button className='btn btn-success mb-2' 
+                            style={{ 
+                                backgroundColor: 'transparent', 
+                                border: '1px solid black',
+                                color: 'black'
+                            }} 
+                        onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
+                        onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
+                    >Sign In
+                </button>  
                   
             </form>
             
-            <button onClick={() => {navigate('/SignUp')}} className='btn btn-success'>Or Sign Up Here!</button>
+                <button onClick={() => {navigate('/SignUp')}} className='btn btn-success'
+                                style={{ 
+                                    backgroundColor: 'transparent', 
+                                    border: '1px solid black',
+                                    color: 'black'
+                                }} 
+                            onMouseEnter={(e) => {e.target.style.backgroundColor = '#d2c216';}}
+                            onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
+                >Or Sign Up Here!
+                </button>
+
+                <h1 style={{
+                    fontFamily: 'Press Start 2P, cursive',
+                    fontSize: '67px',
+                    textShadow: '5px 8px 5px rgba(0, 0, 0, 0.966)',
+                    color: '#d2c216',
+                    top: '25%',
+                    left: '35%',
+                    position: 'absolute',
+                }}>
+                    Game Pod
+                </h1>
        
         </div>
     </div>
