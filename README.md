@@ -1,5 +1,14 @@
 # game-pod
+
 Milestone project #3
+
+
+React, node.js, jsx, Bootstrap, MySql, react-router-dom, cors, express
+
+pixel art credits
+cool forest background art from https://itch.io/profile/edermunizz
+cool necromancer mage enemy pixel art from https://creativekind.itch.io/
+cool hooded protag pixel art from https://penzilla.itch.io/
 
 Team name: Team Game Pod
 Application name: Game Pod
@@ -34,3 +43,4 @@ The ability to play one of the games
 A stretch goal is a common term for a bonus goal… something you want to add but ONLY IF MVP is met.
 The ability to play multiple games
 The ability to 
+
