@@ -3,7 +3,8 @@
 Milestone project #3
 
 
-React, node.js, jsx, Bootstrap, MySql, react-router-dom, cors, express
+
+Create-React, express, node.js, jsx, Bootstrap, MySql, react-router-dom, cors, and axion were among the packages within the project!
 
 pixel art credits
 cool forest background art from https://itch.io/profile/edermunizz
@@ -24,6 +25,7 @@ What technologies are we using (feel free to use or replace examples):
     Front End
         React w/redux
         MaterialUI
+        Bootstrap
 
     Back End
         Node w/ Express
@@ -42,5 +44,10 @@ The ability to play one of the games
 
 A stretch goal is a common term for a bonus goal… something you want to add but ONLY IF MVP is met.
 The ability to play multiple games
-The ability to 
+
+
+pixel art credits
+cool forest background art from https://itch.io/profile/edermunizz
+cool necromancer mage enemy pixel art from https://creativekind.itch.io/
+cool hooded protag pixel art from https://penzilla.itch.io/
 
