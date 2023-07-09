@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import Axios from 'axios'
 
 function SignIn() {
-    const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [username, setUsername] = useState('')
 
     const [loginStatus, setLoginStatus] = useState('')
     const navigate = useNavigate()
@@ -66,7 +66,7 @@ function SignIn() {
                 </button>
        
         </div>
-        
+
         <div>
             <h1>{loginStatus}</h1>
         </div>

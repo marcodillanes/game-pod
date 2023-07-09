@@ -1,5 +1,6 @@
 import React from "react";
 import SignIn from "./components/signin/SignIn.js";
+import { useContext, useState} from "react";
 
 import { SignUp } from "./components/signup/SignUp.jsx"
 import  HomePage from "./components/Home_Page/HomePage.jsx";
