@@ -16,7 +16,7 @@ function App() {
         <Route path='/' element={signedIn ? <HomePage username={username}/> : <SignIn username={username} setUsername={setUsername}/>}></Route>
         <Route path='/SignUp' element={<SignUp/>}></Route>
 
-        <Route path='/HomePage' element={<HomePage/>}></Route>
+        <Route path='/HomePage' element={<HomePage username={username}/>}></Route>
         <Route path='/SideScroller' element={<SideScroller/>}></Route>
 
       </Routes>
