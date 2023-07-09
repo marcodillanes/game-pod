@@ -24,7 +24,7 @@ export const SignUp = () => {
             <div className='p-3 bg-grey w-25'>
                 <form onSubmit={handleSubmit}>
                     <div className='mb-2'>
-                        <label htmlFor="username">Username (Max of 45 chars)</label>
+                        <label htmlFor="username">Username (Max of 10 chars)</label>
                         <input type="text" placeholder='Enter a Username!' value={usernameReg} className="form-control" 
                         onChange={(e) => setUsernameReg(e.target.value)} required/>
                     </div>
