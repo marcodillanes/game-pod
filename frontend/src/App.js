@@ -19,6 +19,7 @@ function App() {
         <Route path='/HomePage' element={<HomePage username={username}/>}></Route>
         {/* <Route path='/SideScroller' element={<SideScroller/>}></Route> */}
 
+
       </Routes>
     </BrowserRouter>
     
