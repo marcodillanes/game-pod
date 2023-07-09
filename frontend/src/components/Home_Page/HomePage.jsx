@@ -27,7 +27,7 @@ const HomePage = ({username}) => {
               <div className="Options">
                 <button onClick={() => {navigate('/SignUp')}} className="SignUp-btn">SIGN UP</button>
                 <button onClick={() => {navigate('/')}} className="SignIn-btn">SIGN IN</button>
-                <button onClick={() => {signOut()}}>Sign Out</button>
+                <button onClick={() => {signOut()}} class='SignOut'>Sign Out</button>
               </div>
             </div>
     </div>

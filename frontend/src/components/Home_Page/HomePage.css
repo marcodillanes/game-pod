@@ -94,7 +94,7 @@ h2 {
     border: 3px solid;
 }
 
-.Game1-btn:hover, .Game2-btn:hover, .Game3-btn:hover, .SignIn-btn:hover, .SignUp-btn:hover{
+.Game1-btn:hover,.SignOut:hover, .Game2-btn:hover, .Game3-btn:hover, .SignIn-btn:hover, .SignUp-btn:hover{
     background-color: #d2c216;
 }
 
@@ -133,4 +133,28 @@ h2 {
     font-size: 15px;
     font-family: 'Press Start 2P', cursive;
 
+}
+
+.SignOut {
+    background-color: transparent;
+    top: 79%;
+    right: 39%;
+    margin-left: 1%;
+    padding: 20px 120px;
+    position: fixed;
+    cursor: pointer;
+    border: 3px solid;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    text-shadow: 3px 6px 3px rgba(0, 0, 0, 0.966);
+    color: #d2c216;
+    top: 20%;
+    left: 43%;
+    position: absolute;
 }
