@@ -49,6 +49,18 @@ function SignIn() {
                             onMouseLeave={(e) => {e.target.style.backgroundColor = 'transparent';}}
                 >Or Sign Up Here!
                 </button>
+
+                <h1 style={{
+                    fontFamily: 'Press Start 2P, cursive',
+                    fontSize: '67px',
+                    textShadow: '5px 8px 5px rgba(0, 0, 0, 0.966)',
+                    color: '#d2c216',
+                    top: '25%',
+                    left: '35%',
+                    position: 'absolute',
+                }}>
+                    Game Pod
+                </h1>
        
         </div>
     </div>
