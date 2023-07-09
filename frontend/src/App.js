@@ -17,8 +17,7 @@ function App() {
         <Route path='/SignUp' element={<SignUp/>}></Route>
 
         <Route path='/HomePage' element={<HomePage/>}></Route>
-        <Route path='/SideScroller' element={<SideScroller/>}></Route>
-
+        {/* <Route path='/SideScroller' element={<SideScroller/>}></Route> */}
       </Routes>
     </BrowserRouter>
     
